@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ca8tudlv1kyy4"
+path="res://.godot/imported/ground_riverOpen.obj-ff94399d7a33299c7aeaeb5cdf9c5fed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_riverOpen.obj-ff94399d7a33299c7aeaeb5cdf9c5fed.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/ground_riverOpen.obj"
+dest_files=["res://.godot/imported/ground_riverOpen.obj-ff94399d7a33299c7aeaeb5cdf9c5fed.mesh", "res://.godot/imported/ground_riverOpen.obj-ff94399d7a33299c7aeaeb5cdf9c5fed.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

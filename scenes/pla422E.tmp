@@ -1,0 +1,123 @@
+[gd_scene load_steps=10 format=3 uid="uid://6e4ytelp328q"]
+
+[ext_resource type="Script" path="res://scripts1/player.gd" id="1_a5wcl"]
+[ext_resource type="Texture2D" uid="uid://dpohfdyf14t51" path="res://assets/lightbackground.png" id="2_c6exk"]
+[ext_resource type="Texture2D" uid="uid://dd0ay5mlrb0yb" path="res://assets/lightoutline.png" id="3_2uuo5"]
+[ext_resource type="Texture2D" uid="uid://bl5v1e1ylf2aa" path="res://assets/lightfill.png" id="4_ds28g"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fstpt"]
+radius = 0.25
+height = 1.0
+
+[sub_resource type="Animation" id="Animation_08q1h"]
+resource_name = "Camera_bumb"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.45, -0.179, 0.25, 1, 0, 0.35, -0.179, 0.5, 1, 0, 0.45, -0.179)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oeo6m"]
+_data = {
+"Camera_bumb": SubResource("Animation_08q1h")
+}
+
+[sub_resource type="SphereMesh" id="SphereMesh_hjv5x"]
+radius = 0.25
+height = 0.25
+radial_segments = 4
+rings = 1
+is_hemisphere = true
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_104e5"]
+
+[node name="Player" type="CharacterBody3D"]
+safe_margin = 0.01
+script = ExtResource("1_a5wcl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_fstpt")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, -0.179)
+cull_mask = 524287
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3D"]
+libraries = {
+"": SubResource("AnimationLibrary_oeo6m")
+}
+
+[node name="Wall_Jump_Cooldown" type="Timer" parent="."]
+
+[node name="Wall_jumping_timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="SubViewport" type="SubViewport" parent="."]
+
+[node name="LightDetection" type="Node3D" parent="SubViewport"]
+
+[node name="Top" type="Camera3D" parent="SubViewport/LightDetection"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.5, 0)
+projection = 1
+current = true
+fov = 29.9
+size = 0.25
+
+[node name="meshdiamond" type="MeshInstance3D" parent="SubViewport/LightDetection"]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
+layers = 524288
+mesh = SubResource("SphereMesh_hjv5x")
+skeleton = NodePath("../..")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visibility_layer = 0
+custom_minimum_size = Vector2(128, 128)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="light_bar" type="TextureProgressBar" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -128.0
+offset_right = 64.0
+grow_horizontal = 2
+grow_vertical = 0
+min_value = 10.0
+value = 30.0
+fill_mode = 7
+texture_under = ExtResource("2_c6exk")
+texture_over = ExtResource("3_2uuo5")
+texture_progress = ExtResource("4_ds28g")
+tint_progress = Color(0.509804, 0.509804, 0.509804, 1)
+
+[node name="TextureRect" type="TextureRect" parent="light_bar"]
+show_behind_parent = true
+light_mask = 524288
+visibility_layer = 524288
+z_as_relative = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("PlaceholderTexture2D_104e5")
+expand_mode = 1
+stretch_mode = 2
+
+[connection signal="timeout" from="Wall_Jump_Cooldown" to="." method="_on_wall_jump_cooldown_timeout"]
+[connection signal="timeout" from="Wall_jumping_timer" to="." method="_on_wall_jumping_timer_timeout"]

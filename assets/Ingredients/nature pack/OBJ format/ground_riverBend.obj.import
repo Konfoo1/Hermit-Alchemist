@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://g2hsqt2exoqf"
+path="res://.godot/imported/ground_riverBend.obj-24f597551f51369b55f2c112d3344c49.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_riverBend.obj-24f597551f51369b55f2c112d3344c49.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/ground_riverBend.obj"
+dest_files=["res://.godot/imported/ground_riverBend.obj-24f597551f51369b55f2c112d3344c49.mesh", "res://.godot/imported/ground_riverBend.obj-24f597551f51369b55f2c112d3344c49.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

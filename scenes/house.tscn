@@ -1,0 +1,142 @@
+[gd_scene load_steps=8 format=3 uid="uid://dnxqhhq0tqce"]
+
+[ext_resource type="PackedScene" uid="uid://vtpccyknd0gr" path="res://Hermit-Alchemist/assets/Castle assets/GLTF format/wall.glb" id="1_t1eyf"]
+[ext_resource type="PackedScene" uid="uid://dfwwpvwiskrmb" path="res://Hermit-Alchemist/assets/Castle assets/GLTF format/wallArchTop.glb" id="2_1oolg"]
+[ext_resource type="PackedScene" uid="uid://blpjwwdjht4fx" path="res://Hermit-Alchemist/assets/graveyard assets/GLB format/lantern-candle.glb" id="3_8wjiu"]
+[ext_resource type="PackedScene" uid="uid://dgoawpleqlcs4" path="res://Hermit-Alchemist/assets/Castle assets/GLTF format/roofGableDetail.glb" id="4_38tb8"]
+[ext_resource type="PackedScene" uid="uid://cti8lnvka7s1h" path="res://Hermit-Alchemist/assets/graveyard assets/GLB format/hay-bale.glb" id="5_du67c"]
+[ext_resource type="PackedScene" uid="uid://c1ec1odlm6eml" path="res://Hermit-Alchemist/assets/graveyard assets/GLB format/hay-bale-bundled.glb" id="6_7b7ty"]
+[ext_resource type="PackedScene" uid="uid://bs7tqbs3ug0qw" path="res://Hermit-Alchemist/assets/Castle assets/GLTF format/fence.glb" id="7_nuqke"]
+
+[node name="House" type="Node3D"]
+
+[node name="wall2" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1, 0, -1)
+
+[node name="wall14" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(-8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, 0.200001, 3, -1)
+
+[node name="wall15" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(-8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, 2, 3, -1)
+
+[node name="wall16" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(-8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, 2, 3, -2.8)
+
+[node name="wall17" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(-8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, 0.200001, 3, -2.8)
+
+[node name="wall3" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1, 0, -3)
+
+[node name="wall4" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(-2, 0, 1.74846e-07, 0, 2, 0, -1.74846e-07, 0, -2, 1, 0, -3)
+
+[node name="wall5" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(-2, 0, 1.74846e-07, 0, 2, 0, -1.74846e-07, 0, -2, 1, 0, -1)
+
+[node name="wall10" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 1, 0, -3)
+
+[node name="wall12" parent="." instance=ExtResource("1_t1eyf")]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, -1, 0, -3)
+
+[node name="wallArchTop2" parent="." instance=ExtResource("2_1oolg")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -0.8001, 0, -1)
+
+[node name="wallArchTop3" parent="." instance=ExtResource("2_1oolg")]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, -2, 0, 8.74228e-08, 0.9202, 0, -1)
+
+[node name="lantern-candle3" parent="." instance=ExtResource("3_8wjiu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.200001, 2, -0.9)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="lantern-candle3"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.057475, 0)
+light_color = Color(1, 0.870588, 0.560784, 1)
+light_energy = 0.527
+light_indirect_energy = 2.734
+light_volumetric_fog_energy = 1.835
+light_size = 0.345
+light_specular = 2.155
+shadow_reverse_cull_face = true
+spot_angle = 74.64
+
+[node name="roofGableDetail2" parent="." instance=ExtResource("4_38tb8")]
+transform = Transform3D(-1.74846e-07, 0, 4, 0, 4, 0, -4, 0, -1.74846e-07, -9.91821e-05, 2, -1.9923)
+
+[node name="hay-bale2" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.5, 0, -0.700001)
+
+[node name="hay-bale3" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.5, 0, -1.3)
+
+[node name="hay-bale4" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.5, 0.3, -1)
+
+[node name="hay-bale5" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.6, 0, -2.4)
+
+[node name="hay-bale6" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.6, 0, -3)
+
+[node name="hay-bale7" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.6, 0.3, -2.7)
+
+[node name="hay-bale-bundled2" parent="." instance=ExtResource("6_7b7ty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.6)
+
+[node name="hay-bale-bundled3" parent="." instance=ExtResource("6_7b7ty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.700001, 0, -3.6)
+
+[node name="hay-bale-bundled4" parent="." instance=ExtResource("6_7b7ty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.299999, 0.3, -3.6)
+
+[node name="fence2" parent="." instance=ExtResource("7_nuqke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.3, 0, -2)
+
+[node name="fence3" parent="." instance=ExtResource("7_nuqke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.4, 0, -2)
+
+[node name="fence4" parent="." instance=ExtResource("7_nuqke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.3, 0, -0.700001)
+
+[node name="fence5" parent="." instance=ExtResource("7_nuqke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.4, 0, -0.700001)
+
+[node name="hay-bale8" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.5, 0, -0.700001)
+
+[node name="hay-bale9" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.5, 0, -1.3)
+
+[node name="hay-bale10" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.5, 0.3, -1)
+
+[node name="hay-bale11" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.6, 0, -2.4)
+
+[node name="hay-bale12" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.6, 0, -3)
+
+[node name="hay-bale13" parent="." instance=ExtResource("5_du67c")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.6, 0.3, -2.7)
+
+[node name="hay-bale-bundled5" parent="." instance=ExtResource("6_7b7ty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.6)
+
+[node name="hay-bale-bundled6" parent="." instance=ExtResource("6_7b7ty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.700001, 0, -3.6)
+
+[node name="hay-bale-bundled7" parent="." instance=ExtResource("6_7b7ty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.299999, 0.3, -3.6)
+
+[node name="fence6" parent="." instance=ExtResource("7_nuqke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.3, 0, -2)
+
+[node name="fence7" parent="." instance=ExtResource("7_nuqke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.4, 0, -2)
+
+[node name="fence8" parent="." instance=ExtResource("7_nuqke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.3, 0, -0.700001)
+
+[node name="fence9" parent="." instance=ExtResource("7_nuqke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.4, 0, -0.700001)

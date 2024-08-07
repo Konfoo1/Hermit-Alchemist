@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bktxq7yfprh16"
+path="res://.godot/imported/crops_wheatStageA.obj-472827262d4ae1d91a859dbdc286b80c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crops_wheatStageA.obj-472827262d4ae1d91a859dbdc286b80c.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/crops_wheatStageA.obj"
+dest_files=["res://.godot/imported/crops_wheatStageA.obj-472827262d4ae1d91a859dbdc286b80c.mesh", "res://.godot/imported/crops_wheatStageA.obj-472827262d4ae1d91a859dbdc286b80c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

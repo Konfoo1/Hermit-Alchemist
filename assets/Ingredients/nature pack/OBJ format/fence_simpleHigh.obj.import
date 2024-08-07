@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dtn6nrtsb1d0v"
+path="res://.godot/imported/fence_simpleHigh.obj-908654fadf283ee3a7ef8591004970ed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_simpleHigh.obj-908654fadf283ee3a7ef8591004970ed.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/fence_simpleHigh.obj"
+dest_files=["res://.godot/imported/fence_simpleHigh.obj-908654fadf283ee3a7ef8591004970ed.mesh", "res://.godot/imported/fence_simpleHigh.obj-908654fadf283ee3a7ef8591004970ed.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

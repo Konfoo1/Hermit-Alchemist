@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://8ivqhg0nmolw"]
+
+[ext_resource type="Script" path="res://Hermit-Alchemist/scripts1/Main.gd" id="1_l2dnd"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_l2dnd")
+
+[node name="Cur_level" type="Node3D" parent="."]
+unique_name_in_owner = true
+
+[node name="Player" type="Node3D" parent="."]
+unique_name_in_owner = true

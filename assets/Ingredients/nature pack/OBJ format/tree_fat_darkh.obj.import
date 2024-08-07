@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ju3oqmakrgx7"
+path="res://.godot/imported/tree_fat_darkh.obj-6853b875d2369079baaf94e0d9d502cf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_fat_darkh.obj-6853b875d2369079baaf94e0d9d502cf.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/tree_fat_darkh.obj"
+dest_files=["res://.godot/imported/tree_fat_darkh.obj-6853b875d2369079baaf94e0d9d502cf.mesh", "res://.godot/imported/tree_fat_darkh.obj-6853b875d2369079baaf94e0d9d502cf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

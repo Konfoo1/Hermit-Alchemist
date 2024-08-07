@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b87wwxufy11m3"
+path="res://.godot/imported/rock_largeA.obj-ca62cb4e0dc9496c3696003d8878e570.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_largeA.obj-ca62cb4e0dc9496c3696003d8878e570.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/rock_largeA.obj"
+dest_files=["res://.godot/imported/rock_largeA.obj-ca62cb4e0dc9496c3696003d8878e570.mesh", "res://.godot/imported/rock_largeA.obj-ca62cb4e0dc9496c3696003d8878e570.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

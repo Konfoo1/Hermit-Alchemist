@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7lqywg82cjdf"]
+
+[ext_resource type="PackedScene" uid="uid://cv8kqwqygqn4i" path="res://Hermit-Alchemist/assets/Castle assets/GLTF format/wallBlock.glb" id="1_23c38"]
+[ext_resource type="PackedScene" uid="uid://dvv0c63kiqdem" path="res://Hermit-Alchemist/assets/Castle assets/GLTF format/wallDoor.glb" id="2_fuwvv"]
+[ext_resource type="PackedScene" uid="uid://btdy27mdvd55a" path="res://Hermit-Alchemist/assets/Castle assets/GLTF format/roofHigh.glb" id="3_bdqov"]
+
+[node name="Unopenhouse" type="Node3D"]
+
+[node name="wallBlock2" parent="." instance=ExtResource("1_23c38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+
+[node name="wallBlock3" parent="." instance=ExtResource("1_23c38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="wallBlock4" parent="." instance=ExtResource("1_23c38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -1)
+
+[node name="wallBlock5" parent="." instance=ExtResource("1_23c38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -1)
+
+[node name="wallDoor2" parent="." instance=ExtResource("2_fuwvv")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 1)
+
+[node name="roofHigh2" parent="." instance=ExtResource("3_bdqov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.2, 0.5, 1, -0.5)
+
+[node name="roofHigh3" parent="." instance=ExtResource("3_bdqov")]
+transform = Transform3D(-1, 0, 1.9233e-07, 0, 1, 0, -8.74228e-08, 0, -2.2, -0.5, 1, -0.5)

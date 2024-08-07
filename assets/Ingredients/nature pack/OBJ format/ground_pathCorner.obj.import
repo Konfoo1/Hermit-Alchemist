@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3j6lo3yxfrjd"
+path="res://.godot/imported/ground_pathCorner.obj-f59550020ee587a0d2ed82a13c80d710.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathCorner.obj-f59550020ee587a0d2ed82a13c80d710.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/ground_pathCorner.obj"
+dest_files=["res://.godot/imported/ground_pathCorner.obj-f59550020ee587a0d2ed82a13c80d710.mesh", "res://.godot/imported/ground_pathCorner.obj-f59550020ee587a0d2ed82a13c80d710.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

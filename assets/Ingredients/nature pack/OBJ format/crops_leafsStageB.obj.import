@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drrotqku6lauh"
+path="res://.godot/imported/crops_leafsStageB.obj-39ec4d3882d69a1d78460da81c2abb75.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crops_leafsStageB.obj-39ec4d3882d69a1d78460da81c2abb75.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/crops_leafsStageB.obj"
+dest_files=["res://.godot/imported/crops_leafsStageB.obj-39ec4d3882d69a1d78460da81c2abb75.mesh", "res://.godot/imported/crops_leafsStageB.obj-39ec4d3882d69a1d78460da81c2abb75.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

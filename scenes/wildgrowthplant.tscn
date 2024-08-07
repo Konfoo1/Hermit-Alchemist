@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2syjn1veif4x"]
+
+[ext_resource type="Script" path="res://Hermit-Alchemist/scripts1/wildgrowthplant.gd" id="1_mtga2"]
+[ext_resource type="ArrayMesh" uid="uid://y08jyom0mvxl" path="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/crops_leafsStageA.obj" id="2_syn02"]
+[ext_resource type="Script" path="res://Hermit-Alchemist/scenes/plant.gd" id="3_mbtdn"]
+[ext_resource type="Script" path="res://Hermit-Alchemist/scripts1/vines.gd" id="3_ncr2m"]
+[ext_resource type="ArrayMesh" uid="uid://bofv5svur8drj" path="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/crops_cornStageC.obj" id="4_dt3ws"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jolwx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n27ux"]
+radius = 0.2
+height = 6.0
+
+[node name="wildgrowthplant" type="Node3D"]
+script = ExtResource("1_mtga2")
+
+[node name="Area3D" type="Area3D" parent="."]
+script = ExtResource("3_mbtdn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("SphereShape3D_jolwx")
+
+[node name="CropsLeafsStageA" type="MeshInstance3D" parent="Area3D"]
+mesh = ExtResource("2_syn02")
+skeleton = NodePath("../..")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+light_color = Color(0.501961, 1, 0.560784, 1)
+light_energy = 0.1
+light_indirect_energy = 0.1
+omni_range = 1.0
+omni_attenuation = 1.51572
+
+[node name="vinesup" type="Area3D" parent="."]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 0, 0, 0)
+visible = false
+monitoring = false
+script = ExtResource("3_ncr2m")
+
+[node name="CropsCornStageC" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, -0.0265004, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CropsCornStageC2" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, 0.573499, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CropsCornStageC3" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, 1.1735, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CropsCornStageC4" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, 1.7735, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CropsCornStageC5" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, 2.3735, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CropsCornStageC6" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, 2.9735, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CropsCornStageC7" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, 3.5735, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CropsCornStageC8" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, 4.2735, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CropsCornStageC9" type="MeshInstance3D" parent="vinesup"]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 0.535, 0, -0.965926, 0, 0.258819, 0, 4.8735, 0)
+mesh = ExtResource("4_dt3ws")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="vinesup"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("CapsuleShape3D_n27ux")
+
+[connection signal="body_entered" from="vinesup" to="vinesup" method="_on_body_entered"]
+[connection signal="body_exited" from="vinesup" to="vinesup" method="_on_body_exited"]

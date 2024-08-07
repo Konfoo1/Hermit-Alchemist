@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dyg2hxrfmsjmm"
+path="res://.godot/imported/cliff_blockQuarter_stone.obj-f767ac056b265d00da104b7e614414fe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_blockQuarter_stone.obj-f767ac056b265d00da104b7e614414fe.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/cliff_blockQuarter_stone.obj"
+dest_files=["res://.godot/imported/cliff_blockQuarter_stone.obj-f767ac056b265d00da104b7e614414fe.mesh", "res://.godot/imported/cliff_blockQuarter_stone.obj-f767ac056b265d00da104b7e614414fe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

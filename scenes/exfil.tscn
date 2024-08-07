@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://drt20tngv7m1x"]
+
+[ext_resource type="PackedScene" uid="uid://dp3p0dttkih1a" path="res://Hermit-Alchemist/assets/graveyard assets/GLB format/debris.glb" id="1_623st"]
+[ext_resource type="Script" path="res://Hermit-Alchemist/scenes/exfil.gd" id="1_cvy0j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmugg"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_b4kc8"]
+material = SubResource("StandardMaterial3D_lmugg")
+size = Vector2(0.5, 0.5)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2xjtm"]
+radius = 0.6
+
+[node name="exfil" type="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.055, 0)
+script = ExtResource("1_cvy0j")
+
+[node name="debris5" parent="." instance=ExtResource("1_623st")]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="debris6" parent="." instance=ExtResource("1_623st")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 1, 0, -2, 0, -8.74228e-08, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_b4kc8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_2xjtm")

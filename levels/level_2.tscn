@@ -1,0 +1,817 @@
+[gd_scene load_steps=38 format=3 uid="uid://bgo23bybvwp14"]
+
+[ext_resource type="Script" path="res://Hermit-Alchemist/scripts1/level_2.gd" id="1_g5rro"]
+[ext_resource type="Texture2D" uid="uid://bm0n26laso02a" path="res://Hermit-Alchemist/assets/ui/ui background.png" id="2_mlynf"]
+[ext_resource type="FontFile" uid="uid://c1r37kf5k08x3" path="res://Hermit-Alchemist/assets/ui/BlackCastleMF.ttf" id="3_d6vsp"]
+[ext_resource type="Texture2D" uid="uid://dbr8yd8d3l57s" path="res://Hermit-Alchemist/assets/Ingredients/soileddirt.png" id="4_vqpbs"]
+[ext_resource type="Texture2D" uid="uid://dh21mtw2donrm" path="res://Hermit-Alchemist/assets/Ingredients/crows feathers.png" id="5_r3wxv"]
+[ext_resource type="Texture2D" uid="uid://b51wspll6vl4f" path="res://Hermit-Alchemist/assets/Ingredients/goldnugget.png" id="6_ekbxl"]
+[ext_resource type="Texture2D" uid="uid://bnldl01fa5q2w" path="res://Hermit-Alchemist/assets/Ingredients/DIAMOND.png" id="7_lc7yo"]
+[ext_resource type="Texture2D" uid="uid://c031lpt68a7p6" path="res://Hermit-Alchemist/assets/Ingredients/untrimmedbush.png" id="8_q6c2r"]
+[ext_resource type="Texture2D" uid="uid://bejg7tbs4hs3s" path="res://Hermit-Alchemist/assets/Ingredients/SILVER COIN.png" id="9_6ajp2"]
+[ext_resource type="Texture2D" uid="uid://n570r01a8obj" path="res://Hermit-Alchemist/assets/Ingredients/COPPER COIN.png" id="10_sqk35"]
+[ext_resource type="Texture2D" uid="uid://ms7tj86ebgxu" path="res://Hermit-Alchemist/assets/Ingredients/MUSHROOMS.png" id="11_n72wx"]
+[ext_resource type="Texture2D" uid="uid://dt4q8rxq2dvg2" path="res://Hermit-Alchemist/assets/Ingredients/CANDLE FLAME.png" id="12_ghew0"]
+[ext_resource type="Texture2D" uid="uid://ct0wuqmomxs1o" path="res://Hermit-Alchemist/assets/Ingredients/GOLDEN FEATHERS.png" id="13_hbfyb"]
+[ext_resource type="Texture2D" uid="uid://bhbaveeleotyp" path="res://Hermit-Alchemist/assets/Ingredients/FROG.png" id="14_f3rcm"]
+[ext_resource type="Texture2D" uid="uid://dvotd36v1ak" path="res://Hermit-Alchemist/assets/Ingredients/SHADOWCRYSTAL.png" id="15_hj0bg"]
+[ext_resource type="Texture2D" uid="uid://crx6a4uvlilwl" path="res://Hermit-Alchemist/assets/ui/PANELS.PNG" id="16_0dtys"]
+[ext_resource type="StyleBox" uid="uid://cy00ffo2em58x" path="res://Hermit-Alchemist/shaders/normalbutton.tres" id="17_t06st"]
+[ext_resource type="StyleBox" uid="uid://diocs80sxsofw" path="res://Hermit-Alchemist/shaders/hoverbutton.tres" id="18_04pj1"]
+[ext_resource type="Texture2D" uid="uid://t28t6kaxtl6g" path="res://Hermit-Alchemist/assets/ui/Start Button.png" id="19_8bmi8"]
+[ext_resource type="Texture2D" uid="uid://m2g5t2mdyuqy" path="res://Hermit-Alchemist/assets/ui/crafting recipes.png" id="20_gbaa8"]
+[ext_resource type="AudioStream" uid="uid://bf25dqq5g8ica" path="res://Hermit-Alchemist/assets/sounds/papers.wav" id="21_nkdpi"]
+[ext_resource type="AudioStream" uid="uid://baco0st54ignu" path="res://Hermit-Alchemist/assets/sounds/bubbles.wav" id="22_03m5e"]
+[ext_resource type="AudioStream" uid="uid://ds66nvy60jkcy" path="res://Hermit-Alchemist/assets/sounds/menuclick.wav" id="23_n6wlu"]
+[ext_resource type="AudioStream" uid="uid://c8rs50w24ll6s" path="res://Hermit-Alchemist/assets/sounds/backgroundforest.wav" id="24_lucu3"]
+[ext_resource type="AudioStream" uid="uid://ebijsaapi0in" path="res://Hermit-Alchemist/assets/sounds/Gamewin.wav" id="25_idyyp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x5ibf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f26a1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hxde4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s55iw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lhba7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0fx5v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1l71e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ajskp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_85d4i"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4ahsq"]
+lifetime_randomness = 0.35
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(200, 200, 0)
+emission_shape_scale = Vector3(50, 50, 50)
+emission_shape = 3
+emission_box_extents = Vector3(4, 4, 4)
+angle_max = 90.0
+direction = Vector3(0, 0, 0)
+flatness = 0.152
+initial_velocity_max = 55.17
+angular_velocity_min = -8.15
+angular_velocity_max = 15.95
+radial_velocity_min = -110.34
+radial_velocity_max = 10.9
+gravity = Vector3(0, -50, 0)
+scale_min = 0.5
+scale_max = 1.5
+turbulence_enabled = true
+turbulence_noise_speed_random = 1.5
+turbulence_influence_min = 0.065
+turbulence_influence_max = 0.692
+
+[sub_resource type="Gradient" id="Gradient_x8qic"]
+offsets = PackedFloat32Array(0, 0.195489, 0.409774, 0.755639)
+colors = PackedColorArray(1, 0, 0, 1, 1, 0.100917, 0.100917, 0.967152, 1, 1, 1, 0.67451, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6423d"]
+gradient = SubResource("Gradient_x8qic")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Crafting_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g5rro")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+modulate = Color(0.615686, 0.615686, 0.615686, 1)
+layout_mode = 2
+texture = ExtResource("2_mlynf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 91.0
+offset_right = 468.0
+offset_bottom = 165.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 64
+text = "Ingredients"
+
+[node name="GridContainer" type="GridContainer" parent="Label"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -121.0
+offset_top = 85.0
+offset_right = 22.0
+offset_bottom = 217.0
+grow_horizontal = 2
+scale = Vector2(2, 2)
+columns = 6
+
+[node name="100" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("4_vqpbs")
+
+[node name="amount" type="Label" parent="Label/GridContainer/100"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="101" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("5_r3wxv")
+
+[node name="amount" type="Label" parent="Label/GridContainer/101"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="102" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("6_ekbxl")
+
+[node name="amount" type="Label" parent="Label/GridContainer/102"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="103" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("7_lc7yo")
+
+[node name="amount" type="Label" parent="Label/GridContainer/103"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="104" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("8_q6c2r")
+
+[node name="amount" type="Label" parent="Label/GridContainer/104"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="105" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("9_6ajp2")
+
+[node name="amount" type="Label" parent="Label/GridContainer/105"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="106" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("10_sqk35")
+
+[node name="amount" type="Label" parent="Label/GridContainer/106"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="107" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("11_n72wx")
+
+[node name="amount" type="Label" parent="Label/GridContainer/107"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="108" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("12_ghew0")
+stretch_mode = 0
+
+[node name="amount" type="Label" parent="Label/GridContainer/108"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="109" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("13_hbfyb")
+
+[node name="amount" type="Label" parent="Label/GridContainer/109"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="110" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("14_f3rcm")
+
+[node name="amount" type="Label" parent="Label/GridContainer/110"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="111" type="TextureButton" parent="Label/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("15_hj0bg")
+
+[node name="amount" type="Label" parent="Label/GridContainer/111"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 2
+
+[node name="crafting" type="Label" parent="."]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 518.0
+offset_right = 548.0
+offset_bottom = 672.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 64
+text = "Crafting"
+
+[node name="GridContainer" type="GridContainer" parent="crafting"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -196.5
+offset_top = -64.0
+offset_right = 3.5
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2, 2)
+columns = 3
+
+[node name="Crafting1" type="TextureRect" parent="crafting/GridContainer"]
+layout_mode = 2
+texture = ExtResource("16_0dtys")
+
+[node name="Crafting2" type="TextureRect" parent="crafting/GridContainer"]
+layout_mode = 2
+texture = ExtResource("16_0dtys")
+
+[node name="Crafting3" type="TextureRect" parent="crafting/GridContainer"]
+layout_mode = 2
+texture = ExtResource("16_0dtys")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 833.0
+offset_top = 949.0
+offset_right = 1097.0
+offset_bottom = 1021.0
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("17_t06st")
+theme_override_styles/hover = ExtResource("18_04pj1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_x5ibf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_f26a1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hxde4")
+text = "Next Night"
+icon = ExtResource("19_8bmi8")
+icon_alignment = 1
+
+[node name="crafting button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 753.0
+offset_right = 577.0
+offset_bottom = 825.0
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("17_t06st")
+theme_override_styles/hover = ExtResource("18_04pj1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s55iw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_lhba7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0fx5v")
+text = "Brew
+"
+icon = ExtResource("19_8bmi8")
+icon_alignment = 1
+
+[node name="tooltip" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 37.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 32
+
+[node name="Potions" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 319.0
+offset_top = -359.0
+offset_right = 493.0
+offset_bottom = -285.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 64
+text = "Potions"
+
+[node name="GridContainer" type="GridContainer" parent="Potions"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.5
+offset_top = 57.0
+offset_right = -81.5
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+columns = 3
+
+[node name="Potion1" type="MenuButton" parent="Potions/GridContainer"]
+layout_mode = 2
+text = "
+ 
+"
+icon = ExtResource("16_0dtys")
+switch_on_hover = true
+item_count = 2
+popup/item_0/text = ""
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/id = 1
+
+[node name="Label" type="Label" parent="Potions/GridContainer/Potion1"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -29.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Potion2" type="MenuButton" parent="Potions/GridContainer"]
+layout_mode = 2
+icon = ExtResource("16_0dtys")
+switch_on_hover = true
+item_count = 2
+popup/item_0/text = ""
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/id = 1
+
+[node name="Label" type="Label" parent="Potions/GridContainer/Potion2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -29.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "2
+"
+horizontal_alignment = 1
+
+[node name="Potion3" type="MenuButton" parent="Potions/GridContainer"]
+layout_mode = 2
+icon = ExtResource("16_0dtys")
+switch_on_hover = true
+item_count = 2
+popup/item_0/text = ""
+popup/item_0/id = 0
+popup/item_1/text = ""
+popup/item_1/id = 1
+
+[node name="Label" type="Label" parent="Potions/GridContainer/Potion3"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -29.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 24
+text = "3
+"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Potions"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_top = 70.0
+offset_right = 77.5
+offset_bottom = 93.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_d6vsp")
+text = "Click for description"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Potions"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -79.0
+offset_top = 225.0
+offset_right = 75.0
+offset_bottom = 248.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_d6vsp")
+text = "Press corresponding number in town to use
+"
+horizontal_alignment = 1
+
+[node name="MenuButton" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 826.0
+offset_top = 857.0
+offset_right = 1108.0
+offset_bottom = 934.0
+theme_override_fonts/font = ExtResource("3_d6vsp")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("17_t06st")
+theme_override_styles/pressed = ExtResource("18_04pj1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1l71e")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ajskp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_85d4i")
+text = "Craftin Notes"
+icon = ExtResource("19_8bmi8")
+icon_alignment = 1
+switch_on_hover = true
+item_count = 1
+popup/item_0/text = ""
+popup/item_0/icon = ExtResource("20_gbaa8")
+popup/item_0/id = 0
+
+[node name="papers" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_nkdpi")
+
+[node name="potion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_03m5e")
+
+[node name="menuclicking" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_n6wlu")
+pitch_scale = 2.58
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_lucu3")
+volume_db = -14.56
+autoplay = true
+
+[node name="win" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_idyyp")
+volume_db = 10.0
+pitch_scale = 1.5
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+scale = Vector2(4.91299, 2.36762)
+emitting = false
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_4ahsq")
+texture = SubResource("GradientTexture2D_6423d")
+lifetime = 4.0
+randomness = 1.0
+visibility_rect = Rect2(0, 0, 1920, 1080)
+
+[connection signal="pressed" from="Label/GridContainer/100" to="." method="_on_100_pressed"]
+[connection signal="pressed" from="Label/GridContainer/101" to="." method="_on_101_pressed"]
+[connection signal="pressed" from="Label/GridContainer/102" to="." method="_on_102_pressed"]
+[connection signal="pressed" from="Label/GridContainer/103" to="." method="_on_103_pressed"]
+[connection signal="pressed" from="Label/GridContainer/104" to="." method="_on_104_pressed"]
+[connection signal="pressed" from="Label/GridContainer/105" to="." method="_on_105_pressed"]
+[connection signal="pressed" from="Label/GridContainer/106" to="." method="_on_106_pressed"]
+[connection signal="pressed" from="Label/GridContainer/107" to="." method="_on_107_pressed"]
+[connection signal="pressed" from="Label/GridContainer/108" to="." method="_on_108_pressed"]
+[connection signal="pressed" from="Label/GridContainer/109" to="." method="_on_109_pressed"]
+[connection signal="pressed" from="Label/GridContainer/110" to="." method="_on_110_pressed"]
+[connection signal="pressed" from="Label/GridContainer/111" to="." method="_on_111_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_next_night_pressed"]
+[connection signal="pressed" from="crafting button" to="." method="_on_crafting_button_pressed"]
+[connection signal="pressed" from="Potions/GridContainer/Potion1" to="." method="_on_potion_1_pressed"]
+[connection signal="pressed" from="Potions/GridContainer/Potion2" to="." method="_on_potion_2_pressed"]
+[connection signal="pressed" from="Potions/GridContainer/Potion3" to="." method="_on_potion_3_pressed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]

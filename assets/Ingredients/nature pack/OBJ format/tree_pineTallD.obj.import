@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xx4itbrckctw"
+path="res://.godot/imported/tree_pineTallD.obj-f8846971fe3cca8c6a94a147ed910a97.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_pineTallD.obj-f8846971fe3cca8c6a94a147ed910a97.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/tree_pineTallD.obj"
+dest_files=["res://.godot/imported/tree_pineTallD.obj-f8846971fe3cca8c6a94a147ed910a97.mesh", "res://.godot/imported/tree_pineTallD.obj-f8846971fe3cca8c6a94a147ed910a97.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c07whdy30d8m8"
+path="res://.godot/imported/stump_round.obj-91fb972fcfe2aed98bff17790c61553a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stump_round.obj-91fb972fcfe2aed98bff17790c61553a.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/stump_round.obj"
+dest_files=["res://.godot/imported/stump_round.obj-91fb972fcfe2aed98bff17790c61553a.mesh", "res://.godot/imported/stump_round.obj-91fb972fcfe2aed98bff17790c61553a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

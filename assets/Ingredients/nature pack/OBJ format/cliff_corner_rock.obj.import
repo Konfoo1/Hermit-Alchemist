@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://de57fhanjqeiy"
+path="res://.godot/imported/cliff_corner_rock.obj-e9a7a5e2758b3787cbca317ad54d4867.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_corner_rock.obj-e9a7a5e2758b3787cbca317ad54d4867.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/cliff_corner_rock.obj"
+dest_files=["res://.godot/imported/cliff_corner_rock.obj-e9a7a5e2758b3787cbca317ad54d4867.mesh", "res://.godot/imported/cliff_corner_rock.obj-e9a7a5e2758b3787cbca317ad54d4867.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

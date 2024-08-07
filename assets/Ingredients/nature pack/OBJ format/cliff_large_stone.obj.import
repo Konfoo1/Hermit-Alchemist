@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfbndlgyv6r02"
+path="res://.godot/imported/cliff_large_stone.obj-d11ab2e01ea9b38aeb18c2fd8729d08f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_large_stone.obj-d11ab2e01ea9b38aeb18c2fd8729d08f.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/cliff_large_stone.obj"
+dest_files=["res://.godot/imported/cliff_large_stone.obj-d11ab2e01ea9b38aeb18c2fd8729d08f.mesh", "res://.godot/imported/cliff_large_stone.obj-d11ab2e01ea9b38aeb18c2fd8729d08f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://i32o3sr16g47"
+path="res://.godot/imported/stone_smallTopA.obj-b6ce49fd978984f7b933853e38c48a85.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone_smallTopA.obj-b6ce49fd978984f7b933853e38c48a85.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/stone_smallTopA.obj"
+dest_files=["res://.godot/imported/stone_smallTopA.obj-b6ce49fd978984f7b933853e38c48a85.mesh", "res://.godot/imported/stone_smallTopA.obj-b6ce49fd978984f7b933853e38c48a85.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

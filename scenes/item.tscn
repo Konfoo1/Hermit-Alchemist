@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://bj2n62n30gqe6"]
+
+[ext_resource type="Script" path="res://Hermit-Alchemist/scripts1/Item.gd" id="1_ynhjm"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_565ov"]
+gravity = Vector3(0, 0.5, 0)
+turbulence_enabled = true
+turbulence_noise_strength = 5.74
+turbulence_noise_scale = 0.0
+turbulence_noise_speed_random = 0.74
+turbulence_influence_min = 0.116
+turbulence_influence_max = 0.29
+turbulence_initial_displacement_min = -0.3
+turbulence_initial_displacement_max = 0.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3fjcv"]
+transparency = 1
+albedo_color = Color(0.803922, 1, 0.8, 1)
+emission_enabled = true
+emission = Color(0.278431, 1, 0, 1)
+anisotropy_enabled = true
+anisotropy = 0.1
+
+[sub_resource type="SphereMesh" id="SphereMesh_fmnmd"]
+material = SubResource("StandardMaterial3D_3fjcv")
+radius = 0.01
+height = 0.02
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ebnu5"]
+radius = 0.2
+
+[node name="Item" type="Area3D"]
+script = ExtResource("1_ynhjm")
+item_number = 100
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_energy = 0.071
+light_indirect_energy = 0.381
+omni_range = 0.909
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+amount = 16
+lifetime = 2.6
+interp_to_end = 0.07
+process_material = SubResource("ParticleProcessMaterial_565ov")
+draw_pass_1 = SubResource("SphereMesh_fmnmd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GPUParticles3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_ebnu5")

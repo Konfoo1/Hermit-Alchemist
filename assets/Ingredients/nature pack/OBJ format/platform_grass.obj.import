@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwp0qjbaefioy"
+path="res://.godot/imported/platform_grass.obj-4a203d660a5c19cf01b9ef815df1c1ef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/platform_grass.obj-4a203d660a5c19cf01b9ef815df1c1ef.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/platform_grass.obj"
+dest_files=["res://.godot/imported/platform_grass.obj-4a203d660a5c19cf01b9ef815df1c1ef.mesh", "res://.godot/imported/platform_grass.obj-4a203d660a5c19cf01b9ef815df1c1ef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c3hqyw8u3plts"
+path="res://.godot/imported/tent_smallOpen.obj-5c7414052b7a426b6c11f4eb552d111f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tent_smallOpen.obj-5c7414052b7a426b6c11f4eb552d111f.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/tent_smallOpen.obj"
+dest_files=["res://.godot/imported/tent_smallOpen.obj-5c7414052b7a426b6c11f4eb552d111f.mesh", "res://.godot/imported/tent_smallOpen.obj-5c7414052b7a426b6c11f4eb552d111f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

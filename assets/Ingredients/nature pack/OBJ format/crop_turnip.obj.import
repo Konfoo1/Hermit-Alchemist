@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ob2wydn5v63n"
+path="res://.godot/imported/crop_turnip.obj-f0835fa8f124f6ef437bd843091d807a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crop_turnip.obj-f0835fa8f124f6ef437bd843091d807a.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/crop_turnip.obj"
+dest_files=["res://.godot/imported/crop_turnip.obj-f0835fa8f124f6ef437bd843091d807a.mesh", "res://.godot/imported/crop_turnip.obj-f0835fa8f124f6ef437bd843091d807a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

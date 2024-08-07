@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cm2x2bmddux5m"
+path="res://.godot/imported/cliff_diagonal_rock.obj-172c3d2de262e97ab46b0ef6450e62bf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_diagonal_rock.obj-172c3d2de262e97ab46b0ef6450e62bf.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/cliff_diagonal_rock.obj"
+dest_files=["res://.godot/imported/cliff_diagonal_rock.obj-172c3d2de262e97ab46b0ef6450e62bf.mesh", "res://.godot/imported/cliff_diagonal_rock.obj-172c3d2de262e97ab46b0ef6450e62bf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

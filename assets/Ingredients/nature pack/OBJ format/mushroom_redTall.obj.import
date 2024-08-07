@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5sihtp2vi7hx"
+path="res://.godot/imported/mushroom_redTall.obj-c71c195cd49d590345212af7d8bb82fc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mushroom_redTall.obj-c71c195cd49d590345212af7d8bb82fc.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/mushroom_redTall.obj"
+dest_files=["res://.godot/imported/mushroom_redTall.obj-c71c195cd49d590345212af7d8bb82fc.mesh", "res://.godot/imported/mushroom_redTall.obj-c71c195cd49d590345212af7d8bb82fc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

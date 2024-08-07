@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://e8xc5q4ibbmb"]
+
+[ext_resource type="Script" path="res://Hermit-Alchemist/scripts1/background_info.gd" id="1_b5cc2"]
+[ext_resource type="FontFile" uid="uid://c1r37kf5k08x3" path="res://Hermit-Alchemist/assets/ui/BlackCastleMF.ttf" id="2_7o5h2"]
+[ext_resource type="AudioStream" uid="uid://c5fp6bf3iuvdw" path="res://Hermit-Alchemist/assets/sounds/backgroundintro.wav" id="3_7fxw5"]
+
+[sub_resource type="Curve" id="Curve_qj5ry"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.347682, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Background" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b5cc2")
+curve = SubResource("Curve_qj5ry")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_7o5h2")
+theme_override_font_sizes/font_size = 32
+text = "You are a hermit that lives in a cave not to far from a small hamlet.
+you are an alchemist that is seeking the illusive Philosopher stone that unlocks infinite alchemical possibilities
+You do not have any ingredients though
+The hamlet is full with very ... \"charitable\" townspeople, Maybe they have some ingredients you could
+...
+Borrow
+...
+Every night you look for ingredients
+Every day you sit in your cave and craft potions that may help you in the next night
+The goal is to find a way to make the Philosophers Stone
+Goodluck"
+horizontal_alignment = 1
+
+[node name="ColorRect2" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="windy" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7fxw5")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

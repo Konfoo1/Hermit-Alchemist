@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bod3m4d6k4nvq"
+path="res://.godot/imported/stone_tallJ.obj-941cd8693b3a8c4150fa92452193e63d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone_tallJ.obj-941cd8693b3a8c4150fa92452193e63d.mesh"]
+
+source_file="res://Hermit-Alchemist/assets/Ingredients/nature pack/OBJ format/stone_tallJ.obj"
+dest_files=["res://.godot/imported/stone_tallJ.obj-941cd8693b3a8c4150fa92452193e63d.mesh", "res://.godot/imported/stone_tallJ.obj-941cd8693b3a8c4150fa92452193e63d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

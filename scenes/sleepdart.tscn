@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcly38k8d00yd"]
+
+[ext_resource type="Script" path="res://Hermit-Alchemist/scripts1/sleepdart.gd" id="1_25agr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nd41u"]
+albedo_color = Color(0.54902, 0, 1, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_gjfeb"]
+material = SubResource("StandardMaterial3D_nd41u")
+radius = 0.01
+height = 0.2
+radial_segments = 4
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_et73m"]
+points = PackedVector3Array(-0.01, -0.0900157, 0, 0, -0.0900157, -0.01, -0.00707126, -0.097083, 0, 0, -0.0900157, 0.01, -0.01, 0.0899961, 0, 0.01, -0.0900157, 0, 0, -0.097083, -0.00707126, 0, 0.0899961, -0.01, 0, -0.1, 0, 0, -0.097083, 0.0070693, 0, 0.0899961, 0.01, -0.00707126, 0.0970634, 0, 0.0070693, -0.097083, 0, 0.01, 0.0899961, 0, 0, 0.0970634, -0.00707126, 0, 0.0970634, 0.0070693, 0, 0.1, 0, 0.0070693, 0.0970634, 0)
+
+[node name="sleepdart" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_25agr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_gjfeb")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("ConvexPolygonShape3D_et73m")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
